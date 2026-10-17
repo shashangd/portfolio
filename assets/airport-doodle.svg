@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Sketch Filter for organic hand-drawn edges -->
+    <filter id="roughpaper" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" result="noise" numOctaves="4" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fdfbf7" />
+
+  <!-- Dot Grid -->
+  <g fill="#d8d2c6" opacity="0.6">
+    <circle cx="50" cy="50" r="1.5"/>
+    <circle cx="100" cy="50" r="1.5"/>
+    <circle cx="150" cy="50" r="1.5"/>
+    <circle cx="200" cy="50" r="1.5"/>
+    <circle cx="250" cy="50" r="1.5"/>
+    <circle cx="300" cy="50" r="1.5"/>
+    <circle cx="350" cy="50" r="1.5"/>
+
+    <circle cx="50" cy="150" r="1.5"/>
+    <circle cx="100" cy="150" r="1.5"/>
+    <circle cx="150" cy="150" r="1.5"/>
+    <circle cx="200" cy="150" r="1.5"/>
+    <circle cx="250" cy="150" r="1.5"/>
+    <circle cx="300" cy="150" r="1.5"/>
+    <circle cx="350" cy="150" r="1.5"/>
+
+    <circle cx="50" cy="250" r="1.5"/>
+    <circle cx="100" cy="250" r="1.5"/>
+    <circle cx="150" cy="250" r="1.5"/>
+    <circle cx="200" cy="250" r="1.5"/>
+    <circle cx="250" cy="250" r="1.5"/>
+    <circle cx="300" cy="250" r="1.5"/>
+    <circle cx="350" cy="250" r="1.5"/>
+
+    <circle cx="50" cy="350" r="1.5"/>
+    <circle cx="100" cy="350" r="1.5"/>
+    <circle cx="150" cy="350" r="1.5"/>
+    <circle cx="200" cy="350" r="1.5"/>
+    <circle cx="250" cy="350" r="1.5"/>
+    <circle cx="300" cy="350" r="1.5"/>
+    <circle cx="350" cy="350" r="1.5"/>
+  </g>
+
+  <!-- Flight Path Doodle Loop -->
+  <path d="M 60 320 C 120 340, 180 280, 160 210 C 140 140, 220 100, 290 120 C 330 130, 350 170, 320 220 C 290 270, 210 260, 200 320" 
+        fill="none" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6 6" filter="url(#roughpaper)" />
+
+  <!-- Doodled Paper Airplane -->
+  <g transform="translate(290, 110) rotate(-25)" filter="url(#roughpaper)">
+    <path d="M 0 0 L 45 -15 L 20 25 Z" fill="#ffffff" stroke="#181d26" stroke-width="2.5" />
+    <path d="M 20 25 L 45 -15 L 12 -2 Z" fill="#e0f2fe" stroke="#181d26" stroke-width="2" />
+    <line x1="45" y1="-15" x2="15" y2="10" stroke="#0284c7" stroke-width="1.5" />
+  </g>
+
+  <!-- Hand-drawn Radar Schematics in Centre -->
+  <circle cx="160" cy="210" r="70" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+  <circle cx="160" cy="210" r="45" fill="none" stroke="#38bdf8" stroke-width="2" />
+  <circle cx="160" cy="210" r="20" fill="none" stroke="#0284c7" stroke-width="1.5" />
+  <circle cx="160" cy="210" r="5" fill="#f59e0b" />
+
+  <!-- Radar Blip -->
+  <circle cx="180" cy="195" r="4" fill="#0284c7" />
+  <circle cx="180" cy="195" r="9" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.6" />
+
+  <!-- Wobbly Border Around Asset -->
+  <rect x="15" y="15" width="370" height="370" rx="20" ry="15" fill="none" stroke="#181d26" stroke-width="2.5" filter="url(#roughpaper)" />
+
+  <!-- Hand-written Annotation Label -->
+  <text x="25" y="375" font-family="'Caveat', cursive" font-size="16" font-weight="bold" fill="#64748b">
+    ✈ Ahmedabad Airport • Operational Architecture Doodle
+  </text>
+</svg>
