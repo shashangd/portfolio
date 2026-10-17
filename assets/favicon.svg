@@ -1,11 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <clipPath id="avatarClip">
-      <circle cx="50" cy="50" r="48" />
+    <clipPath id="avatar-clip">
+      <circle cx="32" cy="32" r="30" />
     </clipPath>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
   </defs>
-  <!-- Border ring -->
-  <circle cx="50" cy="50" r="49" fill="#0284c7" stroke="#0f172a" stroke-width="2" />
-  <!-- Personal Portrait Image -->
-  <image href="profile.png" xlink:href="profile.png" x="2" y="2" width="96" height="96" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)" />
+
+  <!-- Outer Circular Doodle Badge -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg-grad)" stroke="#181d26" stroke-width="2.5" />
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="3 2" />
+
+  <!-- Clipped Avatar Art -->
+  <g clip-path="url(#avatar-clip)">
+    <!-- Aviation Flight Loop Accent in Background -->
+    <path d="M 12 18 C 22 8, 44 8, 52 20" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2 2" />
+    <!-- Tiny Paper Plane Accent -->
+    <polygon points="50,14 56,12 53,18" fill="#0284c7" />
+
+    <!-- Shoulders / Blazer & Shirt -->
+    <path d="M 10 64 C 12 52, 22 47, 32 47 C 42 47, 52 52, 54 64 Z" fill="#d97706" opacity="0.15" />
+    <!-- Blazer -->
+    <path d="M 12 64 C 14 54, 20 50, 32 50 C 44 50, 50 54, 52 64 Z" fill="#d4b996" stroke="#181d26" stroke-width="2" />
+    <!-- Collar / Inner Shirt -->
+    <polygon points="32,50 26,64 38,64" fill="#0369a1" stroke="#181d26" stroke-width="1.5" />
+    <polygon points="32,53 29,48 35,48" fill="#ffffff" />
+
+    <!-- Neck -->
+    <rect x="28" y="42" width="8" height="9" fill="#f0be9b" stroke="#181d26" stroke-width="1.5" />
+
+    <!-- Ears -->
+    <ellipse cx="19" cy="34" rx="2.5" ry="4" fill="#f0be9b" stroke="#181d26" stroke-width="1.5" />
+    <ellipse cx="45" cy="34" rx="2.5" ry="4" fill="#f0be9b" stroke="#181d26" stroke-width="1.5" />
+
+    <!-- Face Base -->
+    <path d="M 21 28 C 21 21, 43 21, 43 28 C 43 37, 40 43, 32 43 C 24 43, 21 37, 21 28 Z" fill="#f7caa8" stroke="#181d26" stroke-width="2" />
+
+    <!-- Beard & Mustache (Shashang's signature well-groomed beard) -->
+    <path d="M 21 34 C 21 42, 25 45, 32 45 C 39 45, 43 42, 43 34 C 42 37, 39 42, 32 42 C 25 42, 22 37, 21 34 Z" fill="#2d2420" />
+    <path d="M 26 38 C 28 36, 31 36, 32 37 C 33 36, 36 36, 38 38 C 36 39, 34 39, 32 38.5 C 30 39, 28 39, 26 38 Z" fill="#2d2420" />
+
+    <!-- Friendly Smile -->
+    <path d="M 28 39 Q 32 42 36 39" fill="#ffffff" stroke="#181d26" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Nose -->
+    <path d="M 32 32 L 31 35 L 33 35" fill="none" stroke="#d49774" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Glasses (Distinctive stylish frames) -->
+    <!-- Left Lens -->
+    <rect x="22" y="27" width="8.5" height="7" rx="2" fill="#e0f2fe" fill-opacity="0.5" stroke="#181d26" stroke-width="1.8" />
+    <!-- Right Lens -->
+    <rect x="33.5" y="27" width="8.5" height="7" rx="2" fill="#e0f2fe" fill-opacity="0.5" stroke="#181d26" stroke-width="1.8" />
+    <!-- Glasses Bridge -->
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#181d26" stroke-width="1.8" />
+    <!-- Glasses Temples -->
+    <line x1="22" y1="29" x2="19" y2="28" stroke="#181d26" stroke-width="1.5" />
+    <line x1="42" y1="29" x2="45" y2="28" stroke="#181d26" stroke-width="1.5" />
+
+    <!-- Eyes (Behind lenses) -->
+    <ellipse cx="26.5" cy="30.5" rx="1.5" ry="1.2" fill="#181d26" />
+    <ellipse cx="37.5" cy="30.5" rx="1.5" ry="1.2" fill="#181d26" />
+    <circle cx="27" cy="30" r="0.5" fill="#ffffff" />
+    <circle cx="38" cy="30" r="0.5" fill="#ffffff" />
+
+    <!-- Eyebrows -->
+    <path d="M 23 25.5 Q 26.5 24 30 25" fill="none" stroke="#2d2420" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 34 25 Q 37.5 24 41 25.5" fill="none" stroke="#2d2420" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Hair (Styled dark modern hair) -->
+    <path d="M 19 27 C 18 21, 21 15, 32 15 C 43 15, 46 21, 45 27 C 43 23, 40 21, 35 22 C 30 20, 24 21, 19 27 Z" fill="#2d2420" stroke="#181d26" stroke-width="2" />
+    <!-- Hair Texture / Swoop -->
+    <path d="M 24 16 Q 32 13 40 17" fill="none" stroke="#4a3b32" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 26 19 Q 34 16 38 20" fill="none" stroke="#4a3b32" stroke-width="1.2" stroke-linecap="round" />
+  </g>
+
+  <!-- Outer Ring Accent -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#181d26" stroke-width="2.5" />
 </svg>
