@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Shashang Dhoriyani | Aviation Technology & Digital Transformation</title>
+  
+  <!-- Favicon & PWA App Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0284c7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Shashang.me">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            doodle: ['"Caveat"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 10pt !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .resume-container {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 font-sans text-slate-800 antialiased py-6 px-4 sm:px-6">
+
+  <!-- Top Action Bar for Screen Viewers -->
+  <div class="no-print max-w-4xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 bg-white p-4 rounded-xl border-2 border-slate-900 shadow-[3px_3px_0px_#181d26]">
+    <div class="flex items-center gap-2">
+      <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+      <span class="font-display font-bold text-sm text-slate-800">
+        Printable &amp; ATS-Compliant Resume Format
+      </span>
+      <span class="font-doodle text-slate-500 text-sm hidden sm:inline">
+        (1-click Save to PDF)
+      </span>
+    </div>
+    
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="text-xs font-bold text-slate-700 hover:text-sky-700 px-3 py-1.5 rounded border border-slate-300">
+        ← Return to Portfolio
+      </a>
+      <button onclick="window.print()" class="text-xs font-bold bg-sky-700 hover:bg-sky-800 text-white px-4 py-2 rounded-lg border-2 border-slate-900 shadow-[2px_2px_0px_#181d26] flex items-center gap-1.5">
+        <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+        Print / Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- RESUME DOCUMENT CONTAINER -->
+  <main class="resume-container max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl border-2 border-slate-900 shadow-[6px_8px_0px_#181d26] space-y-7">
+
+    <!-- 1. HEADER & CONTACT DETAILS -->
+    <header class="border-b-2 border-slate-900 pb-6">
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display tracking-tight">
+            Shashang Dhoriyani
+          </h1>
+          <p class="text-sm sm:text-base font-bold text-sky-800 mt-0.5">
+            Aviation Technology &amp; Digital Transformation Professional
+          </p>
+        </div>
+        <div class="text-xs text-slate-600 sm:text-right space-y-0.5">
+          <div>Ahmedabad, Gujarat, India</div>
+          <div><a href="mailto:dhoriyanishashang777@gmail.com" class="font-semibold text-slate-900">dhoriyanishashang777@gmail.com</a></div>
+          <div><a href="https://github.com/ShashangDhoriyani" class="text-sky-700">github.com/ShashangDhoriyani</a></div>
+          <div><a href="https://www.linkedin.com/in/shashang-dhoriyani-0b393a1b9/" class="text-sky-700">linkedin.com/in/shashang-dhoriyani</a></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. PROFESSIONAL PROFILE & POSITIONING -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-2.5">
+        Professional Profile
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-700 leading-relaxed text-justify">
+        Aviation technology and digital transformation professional with a Computer Engineering background and hands-on exposure across airport IT operations, high-availability terminal infrastructure, digital products, automation, operational analytics, and IT finance. Works at the intersection of airport operations, technology, and business transformation with an emphasis on turning operational requirements into practical, scalable, and commercially sound technology solutions.
+      </p>
+    </section>
+
+    <!-- 3. WORK EXPERIENCE -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-3">
+        Professional Experience
+      </h2>
+
+      <!-- Experience 1: Ahmedabad Airport -->
+      <div class="mb-5">
+        <div class="flex flex-wrap items-baseline justify-between gap-1 mb-1">
+          <div>
+            <span class="text-sm font-bold text-slate-900">Ahmedabad International Airport Limited</span>
+            <span class="text-xs text-slate-500 mx-1.5">•</span>
+            <span class="text-xs font-bold text-sky-800">Assistant Manager – Information Technology</span>
+          </div>
+          <span class="text-xs text-slate-500 font-medium">Aug 2024 – Present | Ahmedabad, India</span>
+        </div>
+        <ul class="list-disc list-outside ml-4 text-xs sm:text-[13px] text-slate-700 space-y-1.5 leading-relaxed">
+          <li>
+            <strong>Airport IT Operations &amp; Infrastructure:</strong> Support 24/7 terminal IT operations, airport devices, and mission-critical systems including Flight Information Display Systems (FIDS), Self-Baggage Drop (SBD), DigiYatra biometric touchpoints, and E-gates, ensuring network redundancy and system availability.
+          </li>
+          <li>
+            <strong>Digital Products &amp; Operational Analytics:</strong> Support requirement definition and coordination for operational analytics platforms (AVIIO) to consolidate passenger-load visibility, baggage performance, and airport operational scorecards.
+          </li>
+          <li>
+            <strong>AI Video Analytics (Digital Eye):</strong> Coordinate with operational stakeholders and AI technology partners to define, evaluate, and prioritize computer vision use cases (queue monitoring, heatmaps, intrusion detection, kerbside traffic).
+          </li>
+          <li>
+            <strong>Airport Operations Control Centre (APOC):</strong> Support design and implementation coordination, operational KPI requirement mapping, and IT infrastructure dependency alignment for unified situational awareness.
+          </li>
+          <li>
+            <strong>Process Digitization &amp; Automation:</strong> Support digitizing operational SOPs, reports, and approvals to reduce manual spreadsheets; engineer automated reporting flows using Microsoft Power Automate and Excel consolidation pipelines.
+          </li>
+          <li>
+            <strong>IT Finance &amp; SAP Procurement:</strong> Support CAPEX/OPEX planning, control-period budgeting inputs, Notes for Approval (NFA), SAP Purchase Requisitions (PR), Purchase Orders (PO), quotation evaluations, and invoice validation.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience 2: Vasoya Brothers Infotech -->
+      <div>
+        <div class="flex flex-wrap items-baseline justify-between gap-1 mb-1">
+          <div>
+            <span class="text-sm font-bold text-slate-900">Vasoya Brothers Infotech</span>
+            <span class="text-xs text-slate-500 mx-1.5">•</span>
+            <span class="text-xs font-bold text-sky-800">Frontend Engineering Intern</span>
+          </div>
+          <span class="text-xs text-slate-500 font-medium">Jun 2023 – Jul 2023 | Surat, India</span>
+        </div>
+        <ul class="list-disc list-outside ml-4 text-xs sm:text-[13px] text-slate-700 space-y-1 leading-relaxed">
+          <li>Developed dynamic and user-friendly web interfaces utilizing HTML5, CSS3, JavaScript, ReactJS, and Tailwind CSS.</li>
+          <li>Translated functional interface requirements into component implementations; conducted code reviews and performance optimizations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. SELECTED STRATEGIC INITIATIVES -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-3">
+        Selected Airport &amp; Technology Initiatives
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
+        
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <span class="font-bold text-slate-900 block">AVIIO Operational Analytics</span>
+          <span class="text-slate-600 leading-snug block mt-0.5">
+            Supported requirement mapping, dashboard coordination, and operational KPI validation for consolidated airport situational awareness.
+          </span>
+        </div>
+
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <span class="font-bold text-slate-900 block">Digital Eye AI Video Analytics</span>
+          <span class="text-slate-600 leading-snug block mt-0.5">
+            Assisted with operational use-case scoping, feasibility analysis, and proof-of-concept planning across queue, crowd, and kerbside monitoring.
+          </span>
+        </div>
+
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <span class="font-bold text-slate-900 block">DigiYatra &amp; Biometric Passenger Flow</span>
+          <span class="text-slate-600 leading-snug block mt-0.5">
+            Coordinated hardware touchpoints, E-gate enablement, airline ecosystem alignment, and technical service escalations.
+          </span>
+        </div>
+
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <span class="font-bold text-slate-900 block">Free Space Optics (FSO) Connectivity</span>
+          <span class="text-slate-600 leading-snug block mt-0.5">
+            Supported technical proposal and NFA documentation for high-speed wireless optical communication links between operational facilities.
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. TECHNICAL SKILLS & DOMAIN COMPETENCIES -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-2.5">
+        Skills &amp; Competencies
+      </h2>
+      <div class="space-y-1.5 text-xs text-slate-700">
+        <div>
+          <strong class="text-slate-900">Aviation &amp; Airport Technologies:</strong> Flight Information Display Systems (FIDS), DigiYatra Ecosystem, Self-Baggage Drop (SBD), APOC / Airport Operations Control, E-gates, Redundant Network Connectivity, Data-Centre &amp; Terminal IT.
+        </div>
+        <div>
+          <strong class="text-slate-900">Software &amp; Web Engineering:</strong> Python, JavaScript (ES6+), ReactJS, Tailwind CSS, HTML5/CSS3, SQL, PHP, Java, C/C++, Relational Databases (MySQL, MongoDB).
+        </div>
+        <div>
+          <strong class="text-slate-900">Data, AI &amp; Automation:</strong> OpenCV (Computer Vision, Motion Tracking), Pandas, NumPy, Power Automate, Automated Reporting Pipelines, Operational Dashboards.
+        </div>
+        <div>
+          <strong class="text-slate-900">IT Finance &amp; Enterprise Workflows:</strong> SAP Procurement Workflows (PR, PO, Service Entry), CAPEX &amp; OPEX Planning, Note-for-Approval (NFA) Documentation, Vendor SLA Management, Business Case Formulation.
+        </div>
+        <div>
+          <strong class="text-slate-900">Professional Capabilities:</strong> Requirement Gathering, Business-to-Technology Translation, Cross-Functional Coordination, UAT Coordination, Management Presentations.
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-2.5">
+        Education
+      </h2>
+      
+      <div class="space-y-2">
+        <div class="flex flex-wrap items-baseline justify-between text-xs sm:text-[13px]">
+          <div>
+            <strong class="text-slate-900">Bachelor of Technology in Computer Engineering</strong>
+            <span class="text-slate-500 mx-1.5">•</span>
+            <span class="text-slate-700">Pandit Deendayal Energy University (formerly PDPU)</span>
+          </div>
+          <span class="text-slate-600 font-medium">Sep 2020 – Jun 2024 | GPA: 8.66 / 10</span>
+        </div>
+
+        <div class="flex flex-wrap items-baseline justify-between text-xs sm:text-[13px]">
+          <div>
+            <strong class="text-slate-900">Higher Secondary Certificate (HSC) – Class XII (Science Stream / PCM)</strong>
+            <span class="text-slate-500 mx-1.5">•</span>
+            <span class="text-slate-700">Nalanda Vidhyalaya</span>
+          </div>
+          <span class="text-slate-600 font-medium">May 2018 – May 2020 | Score: 89%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. LEADERSHIP & EXTRA-CURRICULAR -->
+    <section>
+      <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-900 font-display border-b border-slate-300 pb-1 mb-2">
+        Leadership &amp; Responsibility
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
+        <div>
+          <strong class="text-slate-900">General Secretary</strong> – The Network Club (Jan 2022)
+          <p class="text-slate-600 text-[11px] mt-0.5">Supported organizing a two-day symposium hosting business leaders and industry speakers; facilitated cross-functional coordination.</p>
+        </div>
+        <div>
+          <strong class="text-slate-900">Event Management Head</strong> – Science &amp; Technical Committee (Nov 2022)
+          <p class="text-slate-600 text-[11px] mt-0.5">Coordinated inter-college technical festival logistics liaising across 20+ student technical clubs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOOTER DECLARATION -->
+    <footer class="pt-4 border-t border-slate-300 text-[11px] text-slate-500 flex flex-wrap items-center justify-between">
+      <span>Information declared adheres strictly to aviation security &amp; organizational confidentiality protocols.</span>
+      <span class="font-semibold text-slate-700">Shashang Dhoriyani</span>
+    </footer>
+
+  </main>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

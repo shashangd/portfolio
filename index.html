@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon & PWA App Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0284c7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Shashang.me">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Shashang Dhoriyani | Aviation Technology and Digital Transformation</title>
+  <meta name="title" content="Shashang Dhoriyani | Aviation Technology and Digital Transformation">
+  <meta name="description" content="Portfolio of Shashang Dhoriyani, an aviation technology and digital transformation professional working across airport operations, IT infrastructure, automation, analytics, passenger experience, and smart-airport initiatives.">
+  <meta name="keywords" content="Shashang Dhoriyani, aviation technology, airport digital transformation, smart airport, airport IT, digital products, airport analytics, automation, AVIIO, Digital Eye, DigiYatra, airport operations, AI video analytics, passenger experience, Ahmedabad Airport, computer engineer">
+  <meta name="author" content="Shashang Dhoriyani">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shashang.me/">
+  <meta property="og:title" content="Shashang Dhoriyani | Aviation Technology and Digital Transformation">
+  <meta property="og:description" content="Aviation technology professional with computer engineering foundation working across smart airport solutions, IT infrastructure, analytics, and digital transformation at Ahmedabad International Airport.">
+  <meta property="og:image" content="https://shashang.me/assets/og-card.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://shashang.me/">
+  <meta property="twitter:title" content="Shashang Dhoriyani | Aviation Technology and Digital Transformation">
+  <meta property="twitter:description" content="Aviation technology professional working at the intersection of airport operations, IT infrastructure, analytics, automation, and business transformation.">
+  <meta property="twitter:image" content="https://shashang.me/assets/og-card.svg">
+
+  <!-- Structured Data JSON-LD for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shashangkumar Dhoriyani",
+    "alternateName": "Shashang Dhoriyani",
+    "jobTitle": "Assistant Manager – Information Technology",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ahmedabad International Airport Limited"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Pandit Deendayal Energy University"
+    },
+    "email": "mailto:dhoriyanishashang777@gmail.com",
+    "url": "https://shashang.me/",
+    "sameAs": [
+      "https://github.com/ShashangDhoriyani",
+      "https://www.linkedin.com/in/shashang-dhoriyani-0b393a1b9/"
+    ],
+    "knowsAbout": [
+      "Airport Operations",
+      "Aviation Technology",
+      "Digital Transformation",
+      "AI Video Analytics",
+      "Biometric Passenger Processing",
+      "DigiYatra",
+      "Self-Baggage Drop",
+      "APOC",
+      "IT Infrastructure",
+      "Computer Engineering",
+      "Process Automation",
+      "SAP Procurement Workflows"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#fdfbf7',
+            ink: '#181d26',
+            skyBlue: '#0284c7',
+            amberDoodle: '#f59e0b'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            doodle: ['"Caveat"', 'cursive'],
+            sketch: ['"Architects Daughter"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Doodle & Artistic Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="selection:bg-yellow-200 selection:text-slate-900 relative">
+
+  <!-- Interactive Doodle Trail Canvas -->
+  <canvas id="doodle-canvas"></canvas>
+
+  <!-- TOP ANNOUNCEMENT BAR (Artistic Freeform Banner) -->
+  <div class="bg-amber-100/90 border-b-2 border-slate-900 px-4 py-2 text-center text-xs md:text-sm font-semibold text-slate-900 flex items-center justify-center gap-2">
+    <span class="font-doodle text-lg text-amber-700">✈</span>
+    <span>Live from <strong>Ahmedabad International Airport</strong>: Turning operational challenges into scalable, commercially sound technology.</span>
+    <span class="hidden md:inline font-doodle text-slate-500 font-bold ml-2">#SmartAirports #AviationTech</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b-2 border-slate-900 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Sketch Signature -->
+      <a href="#hero" class="flex items-center gap-3 group text-decoration-none">
+        <div class="w-11 h-11 rounded-full bg-sky-100 border-2 border-slate-900 flex items-center justify-center shadow-[2px_2px_0px_#181d26] group-hover:rotate-6 transition-transform">
+          <i data-lucide="plane-takeoff" class="w-5 h-5 text-sky-700"></i>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-xl tracking-tight text-slate-900 block leading-tight">
+            Shashang Dhoriyani
+          </span>
+          <span class="font-doodle text-sm font-bold text-sky-700 flex items-center gap-1">
+            <span>Aviation IT & Digital Transformation</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-bold font-display text-slate-700">
+        <a href="#about" class="hover:text-sky-700 transition-colors">About</a>
+        <a href="#journey" class="hover:text-sky-700 transition-colors">Journey</a>
+        <a href="#initiatives" class="hover:text-sky-700 transition-colors">Initiatives</a>
+        <a href="#skills" class="hover:text-sky-700 transition-colors">Skills</a>
+        <a href="#philosophy" class="hover:text-sky-700 transition-colors">Philosophy</a>
+        <a href="#ideas" class="hover:text-sky-700 transition-colors">Ideas I Explore</a>
+        <a href="#contact" class="hover:text-sky-700 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="flex items-center gap-3">
+        <!-- Doodle Toggle Button -->
+        <button id="doodle-toggle-btn" class="hidden sm:inline-flex rough-btn rough-btn-sm text-xs" title="Toggle interactive cursor doodle trail">
+          ✨ Doodle Trail: On
+        </button>
+
+        <!-- Printable Resume Link -->
+        <a href="resume.html" target="_blank" class="rough-btn rough-btn-primary rough-btn-sm text-xs font-bold" title="Open print-ready ATS resume">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          Resume
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-24">
+
+    <!-- =========================================================================
+         1. HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="relative pt-4 pb-12">
+      <!-- Background SVG Doodle Flight Paths & Cloud Schematics -->
+      <div class="absolute inset-0 pointer-events-none opacity-25 overflow-hidden -z-10">
+        <svg class="w-full h-full" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 50 480 C 250 450, 400 300, 600 200 C 750 120, 850 180, 950 80" 
+                stroke="#0284c7" stroke-width="2.5" stroke-dasharray="8 8" class="flight-path-dash" />
+          <path d="M 120 180 C 280 120, 520 220, 780 140" 
+                stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 6" />
+        </svg>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Badges / Breadcrumbs -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="doodle-badge doodle-badge-sky">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Ahmedabad, India
+            </span>
+            <span class="doodle-badge doodle-badge-amber">
+              <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Computer Engineering
+            </span>
+            <span class="doodle-badge doodle-badge-emerald">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Airport IT Operations
+            </span>
+          </div>
+
+          <!-- Headline -->
+          <div>
+            <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-display mb-4">
+              Aviation Technology &amp; <br class="hidden sm:inline">
+              <span class="scribble-underline">Digital Transformation</span>
+            </h1>
+            <p class="text-lg md:text-xl font-semibold text-slate-700 font-display">
+              Building smarter airport operations through technology, analytics, automation, and practical execution.
+            </p>
+          </div>
+
+          <!-- Current Role Ribbon -->
+          <div class="p-4 bg-sky-50 border-2 border-sky-600 rounded-xl shadow-[3px_3px_0px_#0369a1] relative">
+            <div class="washi-tape washi-tape-cyan"></div>
+            <div class="text-xs font-bold uppercase tracking-wider text-sky-800 font-display mb-1 flex items-center gap-1.5">
+              <i data-lucide="briefcase" class="w-4 h-4 text-sky-700"></i> Current Position
+            </div>
+            <div class="text-base sm:text-lg font-bold text-slate-900" id="hero-current-role">
+              Assistant Manager – Information Technology • Ahmedabad International Airport Limited
+            </div>
+          </div>
+
+          <!-- Grounded Short Bio -->
+          <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+            “I am Shashang Dhoriyani, an aviation technology and digital transformation professional working at Ahmedabad International Airport. My journey has taken me from computer engineering and frontend development to airport IT operations, digital projects, analytics, automation, infrastructure, and technology finance. I enjoy translating complex operational challenges into practical digital solutions that improve efficiency, visibility, reliability, and passenger experience.”
+          </p>
+
+          <!-- CTAs -->
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="#initiatives" class="rough-btn rough-btn-primary">
+              <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+              Explore Case Studies
+            </a>
+            <a href="resume.html" target="_blank" class="rough-btn rough-btn-amber">
+              <i data-lucide="printer" class="w-4 h-4"></i>
+              Print / Save ATS Resume
+            </a>
+            <a href="#contact" class="rough-btn">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Verified Channels & Fast Links -->
+          <div class="pt-3 flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-600">
+            <button class="copy-email-btn inline-flex items-center gap-1.5 hover:text-sky-700 cursor-pointer py-1 px-2.5 rounded border border-dashed border-slate-300 bg-white">
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>dhoriyanishashang777@gmail.com</span>
+            </button>
+            <a href="https://github.com/ShashangDhoriyani" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-slate-900 py-1 px-2.5 rounded border border-slate-200 bg-white">
+              <i data-lucide="github" class="w-3.5 h-3.5"></i> GitHub: ShashangDhoriyani
+            </a>
+            <a href="https://www.linkedin.com/in/shashang-dhoriyani-0b393a1b9/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-sky-700 py-1 px-2.5 rounded border border-slate-200 bg-white font-bold" title="Open Shashang Dhoriyani on LinkedIn">
+              <i data-lucide="linkedin" class="w-3.5 h-3.5 text-sky-700"></i> LinkedIn
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Hand-Drawn Doodle Airport Illustration & Radar Visual -->
+        <div class="lg:col-span-5 relative">
+          
+          <div class="rough-box p-6 md:p-8 bg-white relative">
+            <div class="washi-tape washi-tape-coral"></div>
+
+            <!-- Hand-drawn Photo & Radar Visuals -->
+            <div class="text-center pb-5 border-b border-dashed border-slate-300">
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4">
+                
+                <!-- Doodle Photo Frame -->
+                <div class="relative group">
+                  <div class="washi-tape washi-tape-cyan" style="top: -10px; width: 64px;"></div>
+                  <div class="w-36 sm:w-40 bg-white p-2.5 pb-2 border-2 border-slate-900 rounded-xl shadow-[3px_4px_0px_#181d26] rotate-[-2deg] group-hover:rotate-0 transition-transform">
+                    <img src="assets/profile.png" onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='assets/profile.jpg';}else if(!this.dataset.triedLocal){this.dataset.triedLocal='1';this.src='file:///C:/Users/30141052/.gemini/antigravity/brain/c3bf7469-1133-4966-ae02-62ba37a0c7fc/profile_cropped_1792219376768.png';}else{this.src='assets/airport-doodle.svg';}" alt="Shashang Dhoriyani" class="w-full h-36 sm:h-40 object-cover rounded-lg border border-slate-200 bg-slate-50">
+                    <span class="font-doodle text-xs sm:text-sm font-bold text-slate-800 mt-1 block">Shashang D.</span>
+                  </div>
+                </div>
+
+                <!-- Animated Radar Graphic -->
+                <div class="relative w-36 h-36 sm:w-40 sm:h-40 flex items-center justify-center">
+                  <!-- Radar SVG Graphic with Animation -->
+                  <svg class="w-full h-full" viewBox="0 0 160 160">
+                    <!-- Concentric circles -->
+                    <circle cx="80" cy="80" r="74" fill="none" stroke="#e2e8f0" stroke-width="2" />
+                    <circle cx="80" cy="80" r="52" fill="none" stroke="#bae6fd" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="80" cy="80" r="30" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+                    <circle cx="80" cy="80" r="6" fill="#0284c7" />
+
+                    <!-- Crosshairs -->
+                    <line x1="80" y1="4" x2="80" y2="156" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 3" />
+                    <line x1="4" y1="80" x2="156" y2="80" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 3" />
+
+                    <!-- Radar Sweep Hand -->
+                    <g class="animate-radar-sweep">
+                      <line x1="80" y1="80" x2="148" y2="35" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+                      <polygon points="80,80 148,35 152,58" fill="rgba(2, 132, 199, 0.15)" />
+                    </g>
+
+                    <!-- Doodled Airplane on Radar -->
+                    <g transform="translate(108, 48) rotate(42) scale(0.7)">
+                      <path d="M12 2L9 9H3L5 13H9L7 20L10 22L13 14L19 14L21 12L13 10L12 2Z" fill="#0369a1" stroke="#082f49" stroke-width="1"/>
+                    </g>
+                  </svg>
+
+                  <!-- Floating Hand-Drawn Badge -->
+                  <div class="absolute -bottom-2 right-1 bg-amber-100 border-2 border-slate-900 px-2 py-0.5 rounded-full text-[10px] font-bold font-display shadow-[2px_2px_0px_#181d26] flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Live Ops
+                  </div>
+                </div>
+
+              </div>
+
+              <h3 class="text-xl font-bold font-display text-slate-900">
+                At the Operational Core
+              </h3>
+              <p class="font-doodle text-lg text-sky-700 font-bold">
+                “Bridging Code, Terminals &amp; Balance Sheets”
+              </p>
+            </div>
+
+            <!-- Sketch Highlights Checklist -->
+            <div class="mt-4 space-y-2.5 text-xs md:text-sm text-slate-700">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>Aviation IT Operations:</strong> FIDS, SBD, DigiYatra, E-gates, Redundant Networks</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>AI &amp; Video Analytics:</strong> Digital Eye, heatmaps, intrusion, queue tracking</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>Commercial IT Finance:</strong> CAPEX/OPEX planning, SAP PR/PO workflows, NFAs</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>Operations Command:</strong> APOC dependencies, multi-stakeholder delivery</span>
+              </div>
+            </div>
+
+            <!-- Doodle Annotation Note -->
+            <div class="mt-5 p-3 bg-amber-50 rounded-lg border border-dashed border-amber-300 text-center">
+              <span class="font-doodle text-sm md:text-base text-amber-900 font-semibold">
+                ✎ Note: No generic templates here. Every project is anchored in real airport ground realities.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. CORE PROFESSIONAL POSITIONING & WHAT I CONSIDER
+         ========================================================================= -->
+    <section id="about" class="relative">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="doodle-badge doodle-badge-sky mb-2">My Differentiator</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+          Technology in its <span class="scribble-underline">Operational &amp; Commercial</span> Context
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm md:text-base">
+          I do not approach a project only as a software or infrastructure ticket. A technology rollout must be functionally adopted, commercially sound, and resilient under 24/7 operating stress.
+        </p>
+      </div>
+
+      <!-- Foundation Statement Callout -->
+      <div class="rough-box p-6 md:p-8 bg-white border-2 border-slate-900 mb-10 text-center relative max-w-4xl mx-auto">
+        <div class="washi-tape washi-tape-cyan"></div>
+        <p class="text-lg md:text-xl font-bold text-slate-800 font-display leading-relaxed">
+          “I work at the intersection of airport operations, technology, and business transformation. My experience spans IT infrastructure, digital products, automation, analytics, passenger-processing systems, project finance, and stakeholder coordination. I focus on turning operational requirements into practical, scalable, and commercially sound technology solutions.”
+        </p>
+      </div>
+
+      <!-- The 12 Facets I Consider (Grid of Doodle Cards) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="target" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Operational Problem</h4>
+          <p class="text-xs text-slate-600">The exact ground friction or bottleneck being resolved.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="smile" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Passenger Outcome</h4>
+          <p class="text-xs text-slate-600">Smoother curb-to-gate transit and reduced anxiety.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">User Adoption</h4>
+          <p class="text-xs text-slate-600">Ensuring operational staff embrace new tools daily.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="layers" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Airport Integration</h4>
+          <p class="text-xs text-slate-600">Interoperability with existing legacy and modern airport stacks.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="server" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Infrastructure Readiness</h4>
+          <p class="text-xs text-slate-600">Cabling, power backup, switch ports, and server capacity.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="database" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Data Governance</h4>
+          <p class="text-xs text-slate-600">Schema integrity, latency, and single source of truth.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="truck" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Vendor Dependencies</h4>
+          <p class="text-xs text-slate-600">SLA commitments, technical support, and contract scopes.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="file-check" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Financial Approvals</h4>
+          <p class="text-xs text-slate-600">Transparent NFA justifications and CAPEX/OPEX sanity.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="shopping-cart" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">SAP Procurement</h4>
+          <p class="text-xs text-slate-600">Smooth PR, PO, service-entry, and payment compliance.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="rocket" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Deployment Feasibility</h4>
+          <p class="text-xs text-slate-600">Executing rollouts in safety-sensitive 24/7 operating terminals.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="presentation" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Management Reporting</h4>
+          <p class="text-xs text-slate-600">Crisp, structured visibility for Chief Airport Officers.</p>
+        </div>
+
+        <div class="p-4 bg-white border-2 border-slate-900 rounded-xl shadow-[2px_2px_0px_#181d26] hover:-translate-y-1 transition-transform">
+          <div class="text-sky-700 mb-2"><i data-lucide="recycle" class="w-5 h-5"></i></div>
+          <h4 class="font-bold text-slate-900 text-sm font-display mb-1">Long-Term Sustainability</h4>
+          <p class="text-xs text-slate-600">Maintenance models, spare parts, and lifecycle updates.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. DETAILED PROFESSIONAL STORY (6 CHAPTERS)
+         ========================================================================= -->
+    <section id="journey" class="relative">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-4 border-b-2 border-slate-900">
+        <div>
+          <span class="doodle-badge doodle-badge-amber mb-1">Career Trajectory</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+            The Professional Story
+          </h2>
+          <p class="text-slate-600 text-sm md:text-base mt-1">
+            From Computer Engineering foundations to airport IT operations, finance workflows, and digital transformation.
+          </p>
+        </div>
+        <div class="font-doodle text-slate-600 text-lg hidden sm:block">
+          ✦ 6 Key Chapters
+        </div>
+      </div>
+
+      <!-- Timeline Container rendered by app.js -->
+      <div id="journey-chapters-container" class="max-w-4xl mx-auto">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SELECTED INITIATIVES & CASE STUDIES (FILTERABLE)
+         ========================================================================= -->
+    <section id="initiatives" class="relative">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="doodle-badge doodle-badge-sky mb-2">Case Studies &amp; Initiatives</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+          Selected <span class="scribble-underline">Airport &amp; Digital</span> Initiatives
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm md:text-base">
+          Grounded case studies detailing the operational challenge, my specific contribution, working methodology, and intended outcomes.
+        </p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div id="project-filters" class="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-10">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <div class="mt-10 text-center font-doodle text-slate-500 text-base">
+        * Click any card above to open the full operational case study breakdown.
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. TECHNICAL SKILLS & ENTERPRISE CAPABILITIES
+         ========================================================================= -->
+    <section id="skills" class="relative">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-4 border-b-2 border-slate-900">
+        <div>
+          <span class="doodle-badge doodle-badge-purple mb-1">High-End &amp; Demanding Skills</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+            Technical Matrix &amp; Practical Context
+          </h2>
+          <p class="text-slate-600 text-sm md:text-base mt-1">
+            Categorized with actual operational application — no artificial percentage bars.
+          </p>
+        </div>
+        <div class="font-doodle text-slate-600 text-lg hidden sm:block">
+          ✎ Applied in Enterprise Ops
+        </div>
+      </div>
+
+      <!-- Skills Categories Grid -->
+      <div id="skills-category-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Business & Professional Capabilities Pills -->
+      <div class="rough-box p-6 md:p-8 bg-sky-50 border-2 border-slate-900">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-900 font-display mb-3 flex items-center gap-2">
+          <i data-lucide="check-check" class="w-4 h-4 text-sky-700"></i> Core Business &amp; Professional Capabilities
+        </div>
+        <div id="capabilities-container" class="flex flex-wrap gap-2.5">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. IDEAS I EXPLORE (CREATIVE STICKY NOTE BOARD)
+         ========================================================================= -->
+    <section id="ideas" class="relative">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="doodle-badge doodle-badge-amber mb-2">Future Horizons</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+          Ideas I <span class="scribble-underline scribble-underline-amber">Explore</span>
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm md:text-base">
+          Emerging concepts in passenger experience, AI computer vision, digital wayfinding, and non-aeronautical commercial revenue opportunities.
+        </p>
+      </div>
+
+      <!-- Sticky Notes Grid -->
+      <div id="ideas-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. WORKING PHILOSOPHY
+         ========================================================================= -->
+    <section id="philosophy" class="relative">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="doodle-badge doodle-badge-emerald mb-2">Guiding Principles</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+          Working Philosophy
+        </h2>
+      </div>
+
+      <!-- Quote Hero Card -->
+      <div class="rough-box p-8 md:p-10 bg-amber-50 border-2 border-slate-900 text-center max-w-4xl mx-auto mb-10 relative">
+        <div class="washi-tape washi-tape-coral"></div>
+        <p id="philosophy-quote" class="text-xl md:text-2xl font-extrabold text-slate-900 font-display leading-snug">
+          “I believe the best technology decisions are made close to the operation. A solution should not only be technically sound; it should be usable, financially responsible, scalable, and relevant to the people who depend on it.”
+        </p>
+        <span class="font-doodle text-lg text-slate-600 block mt-3 font-bold">— Shashang Dhoriyani</span>
+      </div>
+
+      <!-- Philosophy Tenets Grid -->
+      <div id="philosophy-tenets-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. CAREER DIRECTION
+         ========================================================================= -->
+    <section id="career-direction" class="relative">
+      <div class="rough-box p-8 md:p-12 bg-white border-2 border-slate-900 max-w-4xl mx-auto">
+        <div class="washi-tape washi-tape-cyan"></div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="doodle-badge doodle-badge-sky">Forward Horizon</span>
+          <span class="font-doodle text-slate-500 text-base">Long-Term Aspiration</span>
+        </div>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 font-display mb-4">
+          Where I Am Headed
+        </h3>
+        <p class="text-slate-700 text-base md:text-lg leading-relaxed font-medium mb-6">
+          “My long-term goal is to grow into a cross-functional leadership role where I can combine technology, airport operations, passenger experience, and commercial thinking to build services that create measurable operational and business value.”
+        </p>
+        
+        <div class="pt-4 border-t border-dashed border-slate-200">
+          <div class="text-xs uppercase font-bold tracking-wider text-slate-400 font-display mb-3">
+            Key Focus Horizons:
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-semibold text-slate-800">
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> Airport Digital Transformation &amp; Smart Platforms</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> AI &amp; Operational Video Analytics</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> Passenger Experience Innovation</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> Process Automation &amp; Intelligent Workflows</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> Technology-Enabled Commercial &amp; Non-Aero Growth</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span> Cross-Functional Business Leadership</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. EDUCATION & LEADERSHIP
+         ========================================================================= -->
+    <section id="education" class="relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        
+        <!-- Education Column -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 pb-2 border-b-2 border-slate-900">
+            <div class="w-8 h-8 rounded bg-sky-100 border border-slate-900 flex items-center justify-center">
+              <i data-lucide="graduation-cap" class="w-4 h-4 text-sky-800"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-slate-900 font-display">Academic Background</h3>
+          </div>
+          <div id="education-container">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+
+        <!-- Leadership & Responsibility Column -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 pb-2 border-b-2 border-slate-900">
+            <div class="w-8 h-8 rounded bg-amber-100 border border-slate-900 flex items-center justify-center">
+              <i data-lucide="award" class="w-4 h-4 text-amber-800"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-slate-900 font-display">Leadership &amp; Responsibility</h3>
+          </div>
+          <div id="leadership-container">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. RESUME DOWNLOAD & PRINTABLE CTA BANNER
+         ========================================================================= -->
+    <section class="relative">
+      <div class="rough-box p-8 md:p-12 bg-sky-50 border-2 border-slate-900 text-center max-w-4xl mx-auto relative">
+        <div class="washi-tape washi-tape-coral"></div>
+        <div class="inline-flex items-center gap-2 text-sky-800 font-bold text-xs uppercase tracking-wider mb-2 font-display">
+          <i data-lucide="file-check-2" class="w-4 h-4"></i> Verified Professional Resume
+        </div>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 font-display mb-3">
+          Download or Print ATS-Optimized Resume
+        </h3>
+        <p class="text-slate-600 text-sm md:text-base max-w-xl mx-auto mb-6">
+          Access the clean, ATS-compliant printable version formatted for executive recruiters and talent acquisition teams.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="resume.html" target="_blank" class="rough-btn rough-btn-primary">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            View Printable ATS Resume
+          </a>
+          <button onclick="window.print()" class="rough-btn">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+            Print This Page
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         11. CONTACT SECTION
+         ========================================================================= -->
+    <section id="contact" class="relative">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="doodle-badge doodle-badge-sky mb-2">Let's Connect</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-display">
+          Start a <span class="scribble-underline">Conversation</span>
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm md:text-base">
+          Whether discussing smart airport architectures, AI video analytics, automation, or cross-functional tech leadership, I’d be glad to connect.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Left: Contact Details & Quick Links -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="rough-box p-6 bg-white">
+            <h4 class="font-bold text-slate-900 font-display text-lg mb-4 pb-2 border-b border-dashed border-slate-200">
+              Direct Contact
+            </h4>
+
+            <div class="space-y-4 text-sm">
+              <div>
+                <span class="text-xs uppercase font-bold text-slate-400 block font-display">Public Email</span>
+                <button class="copy-email-btn mt-1 text-sky-700 hover:text-sky-900 font-bold font-mono text-xs sm:text-sm flex items-center gap-1.5 break-all">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                  <span>dhoriyanishashang777@gmail.com</span>
+                </button>
+              </div>
+
+              <div>
+                <span class="text-xs uppercase font-bold text-slate-400 block font-display">Current Location</span>
+                <div class="text-slate-800 font-medium flex items-center gap-1.5 mt-1">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-slate-500"></i>
+                  <span>Ahmedabad, Gujarat, India</span>
+                </div>
+              </div>
+
+              <div>
+                <span class="text-xs uppercase font-bold text-slate-400 block font-display">Code &amp; Repositories</span>
+                <a href="https://github.com/ShashangDhoriyani" target="_blank" rel="noopener noreferrer" class="text-slate-800 hover:text-sky-700 font-bold flex items-center gap-1.5 mt-1">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  <span>github.com/ShashangDhoriyani</span>
+                </a>
+              </div>
+
+              <div>
+                <span class="text-xs uppercase font-bold text-slate-400 block font-display">Professional Network</span>
+                <a href="https://www.linkedin.com/in/shashang-dhoriyani-0b393a1b9/" target="_blank" rel="noopener noreferrer" class="text-sky-700 hover:text-sky-900 font-bold flex items-center gap-1.5 mt-1 text-xs sm:text-sm">
+                  <i data-lucide="linkedin" class="w-4 h-4 text-sky-700"></i>
+                  <span>linkedin.com/in/shashang-dhoriyani</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Privacy reassurance note -->
+            <div class="mt-6 pt-4 border-t border-dashed border-slate-200 text-xs text-slate-500 font-doodle text-sm">
+              ✎ Strict privacy maintained. No internal confidential data or numbers are ever transmitted.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="rough-box p-6 md:p-8 bg-white relative">
+            <div class="washi-tape washi-tape-cyan"></div>
+            
+            <h4 class="font-bold text-slate-900 font-display text-lg mb-1">
+              Send a Message
+            </h4>
+            <p class="text-xs text-slate-500 mb-6 font-display">
+              Submits directly to my public mailbox.
+            </p>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 font-display mb-1.5">
+                    Your Name *
+                  </label>
+                  <input type="text" name="name" required placeholder="e.g. John Doe"
+                         class="w-full px-3.5 py-2.5 rounded-lg border-2 border-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-slate-50">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 font-display mb-1.5">
+                    Your Email *
+                  </label>
+                  <input type="email" name="email" required placeholder="john@example.com"
+                         class="w-full px-3.5 py-2.5 rounded-lg border-2 border-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-slate-50">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 font-display mb-1.5">
+                  Subject
+                </label>
+                <input type="text" name="subject" placeholder="Aviation technology inquiry / collaboration"
+                       class="w-full px-3.5 py-2.5 rounded-lg border-2 border-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-slate-50">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 font-display mb-1.5">
+                  Message *
+                </label>
+                <textarea name="message" rows="4" required placeholder="Share your message or inquiry..."
+                          class="w-full px-3.5 py-2.5 rounded-lg border-2 border-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-slate-50"></textarea>
+              </div>
+
+              <button type="submit" class="rough-btn rough-btn-primary w-full py-3">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Send Message
+              </button>
+
+              <div id="form-feedback" class="hidden"></div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="mt-20 border-t-2 border-slate-900 bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <span class="font-display font-extrabold text-lg text-slate-900 block">
+          Shashang Dhoriyani
+        </span>
+        <span class="text-xs text-slate-500">
+          Aviation Technology &amp; Digital Transformation Professional • Ahmedabad, India
+        </span>
+      </div>
+
+      <div class="text-xs text-slate-500 font-doodle text-base">
+        Crafted with an authentic doodle &amp; free-form design aesthetic. Zero generic templates.
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-bold font-display text-slate-700">
+        <a href="#hero" class="hover:text-sky-700">Back to Top ↑</a>
+        <a href="resume.html" target="_blank" class="hover:text-sky-700">Printable Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       PROJECT CASE STUDY MODAL (Accessible Dialog)
+       ========================================================================= -->
+  <div id="project-modal" class="sketch-modal-overlay" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <div class="sketch-modal-content">
+      <!-- Close Button with rough style -->
+      <button id="modal-close-btn" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center font-bold text-slate-800 shadow-[2px_2px_0px_#181d26] hover:rotate-12 transition-transform" aria-label="Close dialog">
+        ✕
+      </button>
+
+      <!-- Dynamic content filled by app.js -->
+      <div id="modal-dynamic-body">
+        <!-- Rendered by openProjectModal() in app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       PRE-PUBLISH VERIFICATION & PRIVACY FLOATING DRAWER
+       ========================================================================= -->
+  <div class="fixed bottom-4 left-4 z-40">
+    <button id="privacy-drawer-toggle" class="rough-btn rough-btn-sm text-xs bg-white text-slate-700 shadow-lg flex items-center gap-1.5" title="View pre-publish privacy & verification checklist">
+      <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-amber-600"></i>
+      <span>Verification Checklist</span>
+    </button>
+  </div>
+
+  <div id="privacy-verification-drawer" class="hidden fixed bottom-16 left-4 z-50 w-80 max-w-[90vw] rough-box p-4 bg-white">
+    <div class="flex items-center justify-between pb-2 mb-2 border-b border-dashed border-slate-200">
+      <span class="font-bold text-xs uppercase tracking-wider text-slate-800 font-display flex items-center gap-1">
+        <i data-lucide="check-square" class="w-3.5 h-3.5 text-sky-700"></i> Pre-Publish Checklist
+      </span>
+      <button id="privacy-drawer-close" class="text-xs font-bold text-slate-400 hover:text-slate-800">✕</button>
+    </div>
+    <p class="text-[11px] text-slate-500 mb-2">
+      Verify these editable placeholders before making this repository public:
+    </p>
+    <div id="privacy-checklist-container" class="space-y-1 mb-2">
+      <!-- Populated dynamically by app.js from data.js -->
+    </div>
+    <div class="text-[10px] text-slate-400 font-doodle">
+      * Internal financial numbers, PR/POs, and employee IDs are strictly omitted.
+    </div>
+  </div>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
