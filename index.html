@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Favicon & PWA App Icons -->
+  <!-- Favicon & Touch Icons (Personal Portrait) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/profile.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/profile.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="alternate icon" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/profile.png">
+  <link rel="shortcut icon" href="assets/profile.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0284c7">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -55,7 +57,7 @@
     "email": "mailto:dhoriyanishashang777@gmail.com",
     "url": "https://shashang.me/",
     "sameAs": [
-      "https://github.com/ShashangDhoriyani",
+      "https://github.com/CODERSHASHANG",
       "https://www.linkedin.com/in/shashang-dhoriyani-0b393a1b9/"
     ],
     "knowsAbout": [
@@ -109,13 +111,6 @@
 
   <!-- Interactive Doodle Trail Canvas -->
   <canvas id="doodle-canvas"></canvas>
-
-  <!-- TOP ANNOUNCEMENT BAR (Artistic Freeform Banner) -->
-  <div class="bg-amber-100/90 border-b-2 border-slate-900 px-4 py-2 text-center text-xs md:text-sm font-semibold text-slate-900 flex items-center justify-center gap-2">
-    <span class="font-doodle text-lg text-amber-700">✈</span>
-    <span>Live from <strong>Ahmedabad International Airport</strong>: Turning operational challenges into scalable, commercially sound technology.</span>
-    <span class="hidden md:inline font-doodle text-slate-500 font-bold ml-2">#SmartAirports #AviationTech</span>
-  </div>
 
   <!-- NAVIGATION -->
   <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b-2 border-slate-900 transition-all">
@@ -339,12 +334,6 @@
               </div>
             </div>
 
-            <!-- Doodle Annotation Note -->
-            <div class="mt-5 p-3 bg-amber-50 rounded-lg border border-dashed border-amber-300 text-center">
-              <span class="font-doodle text-sm md:text-base text-amber-900 font-semibold">
-                ✎ Note: No generic templates here. Every project is anchored in real airport ground realities.
-              </span>
-            </div>
 
           </div>
 
@@ -826,8 +815,8 @@
         </span>
       </div>
 
-      <div class="text-xs text-slate-500 font-doodle text-base">
-        Crafted with an authentic doodle &amp; free-form design aesthetic. Zero generic templates.
+      <div class="text-xs text-slate-500">
+        &copy; 2026 Shashang Dhoriyani. All rights reserved.
       </div>
 
       <div class="flex items-center gap-4 text-xs font-bold font-display text-slate-700">
@@ -851,34 +840,6 @@
       <div id="modal-dynamic-body">
         <!-- Rendered by openProjectModal() in app.js -->
       </div>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-       PRE-PUBLISH VERIFICATION & PRIVACY FLOATING DRAWER
-       ========================================================================= -->
-  <div class="fixed bottom-4 left-4 z-40">
-    <button id="privacy-drawer-toggle" class="rough-btn rough-btn-sm text-xs bg-white text-slate-700 shadow-lg flex items-center gap-1.5" title="View pre-publish privacy & verification checklist">
-      <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-amber-600"></i>
-      <span>Verification Checklist</span>
-    </button>
-  </div>
-
-  <div id="privacy-verification-drawer" class="hidden fixed bottom-16 left-4 z-50 w-80 max-w-[90vw] rough-box p-4 bg-white">
-    <div class="flex items-center justify-between pb-2 mb-2 border-b border-dashed border-slate-200">
-      <span class="font-bold text-xs uppercase tracking-wider text-slate-800 font-display flex items-center gap-1">
-        <i data-lucide="check-square" class="w-3.5 h-3.5 text-sky-700"></i> Pre-Publish Checklist
-      </span>
-      <button id="privacy-drawer-close" class="text-xs font-bold text-slate-400 hover:text-slate-800">✕</button>
-    </div>
-    <p class="text-[11px] text-slate-500 mb-2">
-      Verify these editable placeholders before making this repository public:
-    </p>
-    <div id="privacy-checklist-container" class="space-y-1 mb-2">
-      <!-- Populated dynamically by app.js from data.js -->
-    </div>
-    <div class="text-[10px] text-slate-400 font-doodle">
-      * Internal financial numbers, PR/POs, and employee IDs are strictly omitted.
     </div>
   </div>
 
